@@ -878,7 +878,7 @@ function About(){
                   transition={{delay:i*0.055}}
                   style={{display:"flex",gap:12,marginBottom:11,fontFamily:M,fontSize:11}}>
                   <span style={{color:A,minWidth:100}}>{key}</span>
-                  <span style={{color:"rgba(255,255,255,0.38)"}}>= <span style={{color:"rgba(255,255,255,0.78)"}}>"{value}"</span></span>
+                  <span style={{color:"rgba(255,255,255,0.38)"}}>= <span style={{color:"rgba(255,255,255,0.78)"}}>&quot;{value}&quot;</span></span>
                 </motion.div>
               ))}
             </div>
@@ -887,7 +887,7 @@ function About(){
                 <motion.div key={i} initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}}
                   transition={{delay:i*0.1}} whileHover={{borderColor:`${A}33`,x:4}}
                   style={{border:`1px solid rgba(255,255,255,0.06)`,padding:"16px 18px",transition:"all 0.2s",cursor:"default"}}>
-                  <p style={{fontFamily:S,fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.7,marginBottom:9}}>"{t.quote}"</p>
+                  <p style={{fontFamily:S,fontSize:12,color:"rgba(255,255,255,0.45)",lineHeight:1.7,marginBottom:9}}>&quot;{t.quote}&quot;</p>
                   <div style={{fontFamily:M,fontSize:9,color:A}}>{t.name} <span style={{color:"rgba(255,255,255,0.22)"}}>· {t.role}</span></div>
                 </motion.div>
               ))}
